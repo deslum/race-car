@@ -96,7 +96,7 @@ function bombCollision() {
             if (carX + 45 >= bombs[i].x && carX <= bombs[i].x + 15 && (bombs[i].y >= carY && bombs[i].y < carY + 100)) {
                 bombs[i].status = false;
                 c.drawImage(boom, carX, carY, 100, 100);
-                alert("BOOMM");
+                alert("Бааабааах");
                 document.location.reload(); 
             }
         }
@@ -182,7 +182,7 @@ function draw() {
         
 
     if (score >= 30) {
-        alert("YOU WIN");
+        alert("Победа!!!");
         document.location.reload(); 
     }
 
